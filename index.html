@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="keywords" content="frontend, landing page, css, development web, desenvolvimento web, ux, ui, uxui" />
+  <meta name="author" content="Renan Andrade de Gouveia" />
+  <meta name="description" content="Frontend Mentor challenge solution.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frontend Mentor | Clipboard landing page</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.min.css">
+  <script src="./js/libs/svg-inject.min.js"></script>
+</head>
+
+<body>
+  <div class="page-background">
+    <picture>
+      <source srcset="./images/bg-header-desktop.png" media="(min-width: 376px)">
+      <img src="./images/bg-header-mobile.png" alt="Background image">
+    </picture>
+  </div>
+  <main class="container">
+    <div class="flex-center">
+      <img src="./images/logo.svg" alt="Company logo" onload="SVGInject(this)">
+    </div>
+    <div class="mt-5">
+      <h1> A history of everything you copy</h1>
+
+      <div class="text-container">
+        <p>
+          Clipboard allows you to track and organize everything you
+          copy. Instantly access your clipboard on all your devices.
+        </p>
+      </div>
+    </div>
+    <div class="mt-5 button-container">
+      <a class="btn-ios" href="">Download for iOS</a>
+      <a class="btn-mac" href="">Download for Mac</a>
+    </div>
+  </main>
+  <section class="mt-section">
+    <div class="container">
+      <h2>Keep track of your snippets</h2>
+      <div class="text-container">
+        <p>
+          Clipboard instantly stores any item you copy in the cloud,
+          meaning you can access your snippets immediately on all your
+          devices. Our Mac and iOS apps will help you organize everything.
+        </p>
+      </div>
+    </div>
+    <div class="mt-5 keepTrack__content">
+      <img src="./images/image-computer.png" alt="Monitor with check icon">
+      <div>
+        <div>
+          <h3> Quick Search </h3>
+          <p>Easily search your snippets by content, category, web address, application, and more.</p>
+        </div>
+        <div>
+          <h3>iCloud Sync</h3>
+          <p>Instantly saves and syncs snippets across all your devices.</p>
+        </div>
+        <div>
+          <h3>Complete History</h3>
+          <p>Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-section container">
+    <h2>Access Clipboard anywhere</h2>
+    <p class="text-container">
+      Whether you’re on the go, or at your computer, you can access all your Clipboard
+      snippets in a few simple clicks.
+    </p>
+
+    <div class="mt-5">
+      <img class="accessClipboard__fixImageCanvas" src="./images/image-devices.png" alt="Multi devices with check icon">
+    </div>
+  </section>
+  <section class="mt-section container">
+    <div class="text-container">
+      <h2>Supercharge your workflow</h2>
+      <p>We’ve got the tools to boost your productivity.</p>
+    </div>
+    <div class="workflow__itensContainer">
+      <div>
+        <div class="flex-center">
+          <img class="w-auto" src="./images/icon-blacklist.svg" alt="" onload="SVGInject(this)">
+        </div>
+        <h3 class="mt-3">Create blacklists</h3>
+        <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+      </div>
+      <div>
+        <div class="flex-center">
+          <img class="w-auto" src="./images/icon-text.svg" alt="" onload="SVGInject(this)">
+        </div>
+        <h3 class="mt-3">Plain text snippets</h3>
+        <p>Remove unwanted formatting from copied text for a consistent look.</p>
+      </div>
+      <div>
+        <div class="flex-center">
+          <img class="w-auto" src="./images/icon-preview.svg" alt="" onload="SVGInject(this)">
+        </div>
+        <h3 class="mt-3">Sneak preview</h3>
+        <p> Quick preview of all snippets on your Clipboard for easy access.</p>
+      </div>
+    </div>
+  </section>
+  <section class="mt-section companiesBrand__container">
+    <img class="w-auto" src="./images/logo-google.png" alt="Google logo">
+    <img class="w-auto" src="./images/logo-ibm.png" alt="IBM logo">
+    <img class="w-auto" src="./images/logo-microsoft.png" alt="Microsoft logo">
+    <img class="w-auto" src="./images/logo-hp.png" alt="HP logo">
+    <img class="w-auto" src="./images/logo-vector-graphics.png" alt="Vector graphics logo">
+  </section>
+  <section class="mt-section container">
+    <div class="text-container">
+      <h2>Clipboard for iOS and Mac OS</h2>
+      <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+        and you’re ready to start adding to your clipboard.</p>
+    </div>
+    <div class="mt-5 button-container">
+      <a class="btn-ios" href="#">Download for iOS</a>
+      <a class="btn-mac" href="#">Download for Mac</a>
+    </div>
+  </section>
+  <footer class="mt-section">
+    <div class="container">
+      <div class="footer__leftContainer">
+        <img src="./images/logo.svg" alt="Company brand" onload="SVGInject(this)">
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="#">Install Guide</a></li>
+        </ul>
+      </div>
+      <div class="flex-center gap-3 socialLink__container">
+        <a href="#">
+          <img class="w-auto" src="./images/icon-facebook.svg" alt="Facebook logo" onload="SVGInject(this)">
+        </a>
+        <a href="#">
+          <img class="w-auto" src="./images/icon-twitter.svg" alt="Twitter logo" onload="SVGInject(this)">
+        </a>
+        <a href="#">
+          <img class="w-auto" src="./images/icon-instagram.svg" alt="Instagram logo" onload="SVGInject(this)">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer">Frontend Mentor</a>.
+      Coded by <a href="#">Renan Andrade</a>.
+    </p>
+  </div>
+</body>
+
+</html>

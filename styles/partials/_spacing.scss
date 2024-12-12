@@ -1,0 +1,23 @@
+.mt-section {
+  margin-block-start: 144px;
+}
+
+p {
+  margin-block-start: 16px;
+
+  @include responsive(lg) {
+    margin-block-start: 18px;
+  }
+}
+
+.mt-3 {
+  margin-top: 32px;
+}
+
+.mt-5 {
+  margin-top: 72px;
+}
+
+.gap-3 {
+  gap: 32px;
+}

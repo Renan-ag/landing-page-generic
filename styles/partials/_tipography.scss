@@ -1,0 +1,77 @@
+@mixin typeface-1($size: h2, $device: desktop) {
+
+  // H1
+  @if $size ==h1 and $device ==desktop {
+    font-size: 42px;
+    line-height: 100%;
+  }
+
+  @else if $size ==h1 and $device ==mobile {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  // H2
+  @else if $size ==h2 and $device ==desktop {
+    font-size: 36px;
+    line-height: 110%;
+  }
+
+  @else if $size ==h2 and $device ==mobile {
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  // H3
+  @else if $size ==h3 and $device ==desktop {
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  @else if $size ==h3 and $device ==mobile {
+    font-size: 26px;
+    line-height: 120%;
+  }
+
+  @if $device ==mobile or $device ==desktop{
+    text-align: center;
+  }
+}
+
+@mixin typeface-2($device: desktop) {
+  @if $device ==desktop {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  @else if $device ==mobile {
+    font-size: 18px;
+    line-height: 145%;
+    text-align: center;
+  }
+}
+
+@mixin heading-styles($heading) {
+  color: $dark-grayish-blue;
+  @include typeface-1($heading, desktop);
+
+  @include responsive(sm) {
+    @include typeface-1($heading, mobile);
+  }
+}
+
+@for $i from 1 through 4 {
+  h#{$i} {
+    @include heading-styles(h#{$i});
+  }
+}
+
+p {
+  color: $gray-4;
+  @include typeface-2(desktop);
+
+  @include responsive(sm) {
+    @include typeface-2(mobile);
+  }
+}
